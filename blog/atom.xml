@@ -5,21 +5,21 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Rishi's Blog</title>
- <link href="http://RishiDeKayne.github.io/blog/atom.xml" rel="self"/>
- <link href="http://RishiDeKayne.github.io/blog"/>
+ <link href="http://nirowils.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://nirowils.github.io/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://RishiDeKayne.github.io/blog</id>
+ <id>http://nirowils.github.io/blog</id>
  <author>
-   <name>Rishi De-Kayne</name>
-   <email>rishidek@gmail.com</email>
+   <name>Nicole Wilson</name>
+   <email>nicolerose4423@gmail.com</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://RishiDeKayne.github.io{{ post.url }}"/>
+   <link href="http://nirowils.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://RishiDeKayne.github.io/{{ post.id }}</id>
+   <id>http://nirowils.github.io/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
