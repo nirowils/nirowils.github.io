@@ -6,6 +6,26 @@ title: About Me
 		<div class="about">
 			<h1>About Me</h1>
 			
+			* {
+  			box-sizing: border-box;
+			}
+
+			.column {
+  			float: left;
+  			width: 25%;
+  			padding: 5px;
+			}
+
+			/* Clearfix (clear floats) */
+			.row::after {
+ 			content: "";
+  			clear: both;
+  			display: table;
+			}
+			</style>
+			</head>
+			<body>
+			
 			 <div class="row">
   			 <div class="column">
     			 <img src="/pics/orcas.png" alt="Orcas" style="width:100%">
@@ -20,18 +40,6 @@ title: About Me
    			 <img src="/pics/grey.png" alt="Seal" style="width:100%">
   			</div>
 			</div> 
-	
-			.column {
- 			float: left;
-  			width: 25%;
-  			padding: 5px;
-			}
-
-			.row::after {
-  			content: "";
-  			clear: both;
-  			display: table;
-			} 
 					
 			<p>Hello, I'm Nicole - I am an environmental consultant with expertise in marine biology and ecosystem-based management.
 			<p><u><strong>Interests</strong></u>: My interests and expertise lie in the overlap between human activities and non-human (mammals, birds, fishes) habitat use of aquatic environments. My aim is to provide innovative, robust, and scientifically sound solutions for anthropogenic concerns relating to the marine environment.</p>
